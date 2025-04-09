@@ -1,60 +1,71 @@
+/* styles.css */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
-    line-height: 1.6;
-    padding: 20px;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header, section, footer {
+  width: 100%;
+  padding: 20px 30px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+a {
+  color: #80bfff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-position: inside;
+  padding: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #3478f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #2a5db0;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
   }
-  
+
   header, section, footer {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: #1e1e1e;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    border-radius: 8px;
-    margin-bottom: 20px;
+    padding: 15px 20px;
   }
-  
-  h1, h2 {
-    color: #ffffff;
-  }
-  
-  a {
-    color: #80bfff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  ul {
-    padding-left: 20px;
-  }
-  
-  .button {
-    display: inline-block;
-    padding: 10px 16px;
-    background-color: #3478f6;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    margin-top: 10px;
-  }
-  
-  .button:hover {
-    background-color: #2a5db0;
-  }
-  
-  @media (max-width: 600px) {
-    body {
-      padding: 10px;
-    }
-  
-    header, section, footer {
-      padding: 15px;
-    }
-  }
-  
+}
