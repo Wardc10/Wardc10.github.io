@@ -1,92 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Christopher Ward | Resume</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Christopher Ward – Resume</title>
+  <meta name="description" content="Resume of Christopher Ward, Computer Science graduate from Stockton University." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <h1>Christopher Ward</h1>
-      <p><a href="mailto:wardc8801@gmail.com">wardc8801@gmail.com</a> | Petersburg, NJ | <a href="tel:7324031366">(732) 403-1366</a></p>
-      <p><a href="https://www.linkedin.com/in/chris-ward-8801w/" target="_blank">LinkedIn: Chris Ward</a></p>
-      <p><a href="https://github.com/Wardc10" target="_blank">GitHub: Wardc10</a></p>
-      <a href="https://github.com/wardc10/resume/raw/main/WardChristopherResume2025.pdf" class="button" download>Download PDF Resume</a>
-    </header>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1 class="name">Christopher Ward</h1>
+      <p class="tagline">Computer Science • Stockton University (May 2025)</p>
+
+      <div class="contact">
+        <a href="mailto:wardc8801@gmail.com" class="chip">wardc8801@gmail.com</a>
+        <span class="chip">Branchville, NJ</span>
+        <a href="tel:+17324031366" class="chip">(732) 403-1366</a>
+        <a class="chip" href="https://www.linkedin.com/in/chris-ward-8801w/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="chip" href="https://github.com/Wardc10" target="_blank" rel="noopener">GitHub</a>
+      </div>
+
+      <div class="actions">
+        <!-- Put WardChristopherResumeNov2025.pdf in the same folder as this file -->
+        <a class="btn" href="WardChristopherResumeNov2025.pdf" download>Download PDF</a>
+        <a class="btn ghost" href="#print" onclick="window.print(); return false;">Print</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
     <section>
       <h2>Objective</h2>
       <p>To secure a full-time position with challenging opportunities in the field of Computer Science.</p>
     </section>
 
-    <section>
-      <h2>Education</h2>
-      <h3>Stockton University | Galloway, NJ</h3>
-      <p>Bachelor Degree in Computer Science – May 2025<br>GPA: 3.05<br>Coursework: Cryptography & Data Security, Operating Systems,
-         Networking Principles, Database Management</p>
-      
-    </section>
+    <section class="two-col">
+      <div>
+        <h2>Education</h2>
+        <div class="item">
+          <div class="item-head">
+            <h3>Stockton University — <span class="role">B.S. in Computer Science</span></h3>
+            <span class="meta">Galloway, NJ • May 2025</span>
+          </div>
+          <ul class="bullets tight">
+            <li>GPA: 3.05</li>
+            <li>Coursework: Cryptography &amp; Data Security, Operating Systems, Computer Networking Principles, Database Management</li>
+          </ul>
+        </div>
+      </div>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Programming:</strong> Java, Python, C++, C, SQL, JavaScript, HTML</li>
-        <li><strong>Software:</strong> Adobe Photoshop, MS Office</li>
-      </ul>
+      <div>
+        <h2>Skills</h2>
+        <ul class="pill-list">
+          <li>Java</li><li>Python</li><li>C++</li><li>SQL</li><li>JavaScript</li><li>HTML</li>
+          <li>Adobe Photoshop</li><li>MS Office (Word, Excel, PowerPoint)</li>
+        </ul>
+      </div>
     </section>
 
     <section>
       <h2>Academic Projects</h2>
-      <h3><strong></strong>'Peneration Testing' Project | Galloway, NJ (9/24-12/24)</h3>
-      <ul>
-        <li>Conducted penetration tests on DVWA using OWASP ZAP in Kali Linux environments</li>
-        <li>Simulated realistic attack scenarios to strengthen web security and vulnerability assessment </li>
-      </ul>
 
-      <h3>‘Masa Sushi’ Design Project | Princeton, NJ (6/24–8/24)</h3>
-      <ul>
-        <li>Collaborated with a small team to re-design a local sushi restaurant’s website using JavaScript, HTML, and CSS </li>
-        <li>Worked through multiple design and testing phases, receiving feedback from user forms</li>
-      </ul>
+      <div class="item">
+        <div class="item-head">
+          <h3>Penetration Testing Project</h3>
+          <span class="meta">Galloway, NJ • Sep 2024 – Dec 2024</span>
+        </div>
+        <ul class="bullets">
+          <li>Conducted penetration tests on DVWA using OWASP ZAP in Kali Linux environments.</li>
+          <li>Simulated realistic attack scenarios to strengthen web security and vulnerability assessment.</li>
+        </ul>
+      </div>
 
-      <h3>'Affinity IoT' Project | Hoboken, NJ (9/22–5/23)</h3>
-      <ul>
-        <li>Collaborated with a team of six members to evaluate and assign values to industrial sized IoT devices, based on their security and vulnerability</li>
-        <li>The team assigned safety scores based on a list of twenty dynamic and/or static criteria </li>
-      </ul>
+      <div class="item">
+        <div class="item-head">
+          <h3>“Masa Sushi” Website Redesign</h3>
+          <span class="meta">Princeton, NJ • Jun 2024 – Aug 2024</span>
+        </div>
+        <ul class="bullets">
+          <li>Collaborated with a small team to re-design a local sushi restaurant’s website using JavaScript, HTML, and CSS.</li>
+          <li>Ran multiple design and testing phases, incorporating feedback from user forms.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <h3>“Affinity IoT” Device Risk Scoring</h3>
+          <span class="meta">Hoboken, NJ • Sep 2022 – May 2023</span>
+        </div>
+        <ul class="bullets">
+          <li>Worked with a team of six to evaluate industrial IoT devices based on security and vulnerability.</li>
+          <li>Assigned safety scores using a list of twenty dynamic and static criteria.</li>
+        </ul>
+      </div>
     </section>
 
     <section>
-      <h2>Leadership Experience</h2>
-      <h3>Stevens Esports Varsity Captain | Hoboken, NJ (8/20–5/23)</h3>
-      <ul>
-        <li>Organized weekly practices, scheduled matches, managed rosters</li>
-      </ul>
+      <h2>Leadership</h2>
+      <div class="item">
+        <div class="item-head">
+          <h3>Stevens Esports — Varsity Captain</h3>
+          <span class="meta">Hoboken, NJ • Aug 2020 – May 2023</span>
+        </div>
+        <ul class="bullets">
+          <li>Organized weekly team practices and scheduled games and meetings.</li>
+          <li>Managed team roster and lineup as captain and coordinator.</li>
+        </ul>
+      </div>
     </section>
 
     <section>
       <h2>Work Experience</h2>
-      <h3>Cheryl Sayers, CPA, P.C. | Marmora, NJ (11/20–2/24)</h3>
-      <ul>
-        <li>Supported tax prep and tech troubleshooting</li>
-        <li>Oversaw technical upgrades and installations</li>
-        <li>Managed financial data entry</li>
-      </ul>
-      
-      
-      <h3>Bungalow Bowls | Ocean City, NJ (5/20–9/24)</h3>
-      <ul>
-        <li>Created Excel tools for tip payouts</li>
-        <li>Handled orders, balanced drawers, closed shifts</li>
-      </ul>
+      <div class="item">
+        <div class="item-head">
+          <h3>Customer Success Associate — Planet Networks</h3>
+          <span class="meta">Newton, NJ • Aug 2025 – Present</span>
+        </div>
+        <ul class="bullets">
+          <li>Provide technical support, information, and general assistance to customers.</li>
+          <li>Maintain clear communication and follow through on issue resolution to ensure positive experiences.</li>
+          <li>Assist field technicians in identifying and resolving connectivity issues for residential and business clients.</li>
+        </ul>
+      </div>
 
+      <div class="item">
+        <div class="item-head">
+          <h3>Support Associate — Spirit Halloween</h3>
+          <span class="meta">Egg Harbor City, NJ • May 2025 – Aug 2025</span>
+        </div>
+        <ul class="bullets">
+          <li>Supported POS systems across Spencer’s and Spirit Halloween retail locations.</li>
+          <li>Assisted with software and hardware troubleshooting during peak season.</li>
+          <li>Collaborated with regional tech teams to maintain system uptime.</li>
+        </ul>
+      </div>
     </section>
 
-    <footer>
-      <p>U.S. Citizen | Available to Work: January 2025</p>
-    </footer>
-  </div>
+    <section class="meta-grid">
+      <div>
+        <h2>Additional</h2>
+        <ul class="bullets tight">
+          <li>U.S. Citizen</li>
+          <li>Available to work: Nov 2025</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="y"></span> Christopher Ward</p>
+    </div>
+  </footer>
+
+  <script>
+    // Auto-year for footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
