@@ -3,95 +3,190 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Christopher Ward | Resume</title>
+  <title>Christopher Ward</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <div class="wrapper">
-    <header>
-      <h1>Christopher Ward</h1>
-      <p><a href="mailto:wardc8801@gmail.com">wardc8801@gmail.com</a> | Branchville, NJ | <a href="tel:7324031366">(732) 403-1366</a></p>
-      <p><a href="https://www.linkedin.com/in/chris-ward-8801w/" target="_blank">LinkedIn: Chris Ward</a></p>
-      <p><a href="https://github.com/Wardc10" target="_blank">GitHub: Wardc10</a></p>
-      <a href="https://github.com/wardc10/resume/raw/main/WardChristopherResumeNov2025.pdf" class="button" download>Download PDF Resume</a>
+
+  <div class="page">
+
+    <header class="site-header">
+      <div class="header-top">
+        <div class="name-block">
+          <h1 class="name">Christopher Ward</h1>
+          <span class="title-tag">Computer Science Professional</span>
+        </div>
+        <div class="contact-block">
+          <a href="mailto:wardc8801@gmail.com" class="contact-line">wardc8801@gmail.com</a>
+          <a href="tel:7324031366" class="contact-line">(732) 403-1366</a>
+          <span class="contact-line">Branchville, NJ</span>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/chris-ward-8801w/" target="_blank" class="link-pill">LinkedIn</a>
+            <a href="https://github.com/Wardc10" target="_blank" class="link-pill">GitHub</a>
+          </div>
+          <a href="https://github.com/wardc10/resume/raw/main/WardChristopherResumeNov2025.pdf" class="download-btn" download>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+      <div class="header-rule"></div>
     </header>
 
-    <section>
-      <h2>Objective</h2>
-      <p>To secure a full-time position with challenging opportunities in the field of Computer Science.</p>
-    </section>
+    <main class="content">
 
-    <section>
-      <h2>Education</h2>
-      <h3>Stockton University | Galloway, NJ</h3>
-      <p>Bachelor Degree in Computer Science – May 2025<br>GPA: 3.05<br>Coursework: Cryptography & Data Security, Operating Systems,
-         Networking Principles, Database Management</p>
-      
-    </section>
+      <!-- SUMMARY -->
+      <section class="resume-section" style="--delay: 0.08s">
+        <div class="section-label">Summary</div>
+        <div class="section-body">
+          <!-- SUMMARY_START -->
+          <p class="summary-text">Computer Science professional with hands-on experience in Tier 2 technical support, network troubleshooting across layers 1–3, and system administration. Proven ability to diagnose complex infrastructure issues, manage Microsoft 365 environments, and collaborate across technical teams to deliver reliable solutions.</p>
+          <!-- SUMMARY_END -->
+        </div>
+      </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <p><strong>Programming:</strong> Java, Python, C++, C, SQL, JavaScript, HTML</p>
-        <p><strong>Software:</strong> Adobe Photoshop, MS Office</p>
-      </ul>
+      <!-- EXPERIENCE -->
+      <section class="resume-section" style="--delay: 0.18s">
+        <div class="section-label">Experience</div>
+        <div class="section-body">
+          <!-- EXPERIENCE_START -->
 
-    </section>
+          <div class="entry">
+            <div class="entry-header">
+              <div class="entry-left">
+                <span class="entry-org">Planet Networks</span>
+                <span class="entry-role">Tier 2 Customer Success Associate</span>
+              </div>
+              <div class="entry-right">
+                <span class="entry-location">Newton, NJ</span>
+                <span class="entry-date">Aug 2025 — Present</span>
+              </div>
+            </div>
+            <ul class="entry-list">
+              <li>Provide Tier 2 technical support for residential and business clients, diagnosing and resolving complex layer 1–3 connectivity issues including VLAN configuration, static IP provisioning, NAT problems, and IP configuration errors</li>
+              <li>Manage MSP client environments using Microsoft 365 Admin and Exchange, handling user provisioning, email configuration, and authentication troubleshooting</li>
+              <li>Support field technicians during service installations by provisioning ONUs, verifying optical light levels, and confirming link status and device connectivity</li>
+            </ul>
+          </div>
 
-    <section>
-      <h2>Academic Projects</h2>
-      <h3><strong></strong>'Peneration Testing' Project | Galloway, NJ (9/24-12/24)</h3>
-      <ul>
-        <li>Conducted penetration tests on DVWA using OWASP ZAP in Kali Linux environments</li>
-        <li>Simulated realistic attack scenarios to strengthen web security and vulnerability assessment </li>
-      </ul>
+          <div class="entry">
+            <div class="entry-header">
+              <div class="entry-left">
+                <span class="entry-org">Spirit Halloween</span>
+                <span class="entry-role">POS Support Associate</span>
+              </div>
+              <div class="entry-right">
+                <span class="entry-location">Egg Harbor City, NJ</span>
+                <span class="entry-date">May 2025 — Aug 2025</span>
+              </div>
+            </div>
+            <ul class="entry-list">
+              <li>Delivered Tier 1 technical support for 200+ Spencer's and Spirit Halloween retail locations across the US and Canada during peak season</li>
+              <li>Troubleshot software and hardware issues for point-of-sale systems, coordinating with regional technical teams to maintain system uptime</li>
+            </ul>
+          </div>
 
-      <h3>‘Masa Sushi’ Design Project | Princeton, NJ (6/24–8/24)</h3>
-      <ul>
-        <li>Collaborated with a small team to re-design a local sushi restaurant’s website using JavaScript, HTML, and CSS </li>
-        <li>Worked through multiple design and testing phases, receiving feedback from user forms</li>
-      </ul>
+          <!-- EXPERIENCE_END -->
+        </div>
+      </section>
 
-      <h3>'Affinity IoT' Project | Hoboken, NJ (9/22–5/23)</h3>
-      <ul>
-        <li>Collaborated with a team of six members to evaluate and assign values to industrial sized IoT devices, based on their security and vulnerability</li>
-        <li>The team assigned safety scores based on a list of twenty dynamic and/or static criteria </li>
-      </ul>
+      <!-- EDUCATION -->
+      <section class="resume-section" style="--delay: 0.28s">
+        <div class="section-label">Education</div>
+        <div class="section-body">
+          <!-- EDUCATION_START -->
+          <div class="entry">
+            <div class="entry-header">
+              <div class="entry-left">
+                <span class="entry-org">Stockton University</span>
+                <span class="entry-role">B.S. Computer Science</span>
+              </div>
+              <div class="entry-right">
+                <span class="entry-location">Galloway, NJ</span>
+                <span class="entry-date">May 2025</span>
+              </div>
+            </div>
+            <p class="entry-detail">GPA: 3.0 &nbsp;·&nbsp; Relevant Coursework: Operating Systems, Computer Network Principles, Database Management</p>
+          </div>
+          <!-- EDUCATION_END -->
+        </div>
+      </section>
 
-    </section>
+      <!-- SKILLS -->
+      <section class="resume-section" style="--delay: 0.38s">
+        <div class="section-label">Skills</div>
+        <div class="section-body">
+          <!-- SKILLS_START -->
+          <div class="skills-grid">
+            <div class="skill-group">
+              <span class="skill-category">Networking &amp; Infrastructure</span>
+              <span class="skill-items">Layer 1–3 troubleshooting, VLAN configuration, static IP provisioning, NAT, ONU provisioning, light level verification, TCP/IP</span>
+            </div>
+            <div class="skill-group">
+              <span class="skill-category">System Administration</span>
+              <span class="skill-items">Microsoft 365 Admin, Exchange Online, user provisioning, email configuration, authentication protocols</span>
+            </div>
+            <div class="skill-group">
+              <span class="skill-category">Programming &amp; Tools</span>
+              <span class="skill-items">Python, Java, SQL, JavaScript, HTML, CSS, Windows Batch scripting</span>
+            </div>
+          </div>
+          <!-- SKILLS_END -->
+        </div>
+      </section>
 
-    <section>
-      <h2>Leadership Experience</h2>
-      <h3>Stevens Esports Varsity Captain | Hoboken, NJ (8/20–5/23)</h3>
-      <ul>
-        <li>Organized weekly practices, scheduled matches, managed rosters</li>
-      </ul>
+      <!-- PROJECTS & LEADERSHIP -->
+      <section class="resume-section" style="--delay: 0.48s">
+        <div class="section-label">Projects &amp; Leadership</div>
+        <div class="section-body">
+          <!-- PROJECTS_START -->
 
-    </section>
+          <div class="entry">
+            <div class="entry-header">
+              <div class="entry-left">
+                <span class="entry-org">Affinity IoT Security Assessment</span>
+              </div>
+              <div class="entry-right">
+                <span class="entry-date">Sep 2022 — May 2023</span>
+              </div>
+            </div>
+            <ul class="entry-list">
+              <li>Led team of four in evaluating the security of industrial IoT devices, developing a comprehensive security scoring framework based on 20 dynamic and static criteria</li>
+            </ul>
+          </div>
 
-    <section>
-      <h2>Work Experience</h2>
-      <h3>Planet Networks | Newton, NJ (8/25–Current)</h3>
-      <h4>Customer Success Associate</h4>
-      <ul>
-        <li>Provide technical support, information, and general assistance to customers</li>
-        <li>Ensure a positive customer experience by maintaining clear communication and following through on issue resolution</li>
-        <li>Assist field technicians in identifying and resolving connectivity issues for residential and business clients</li>
-      </ul>
-      
-      <h3>Spirit Halloween | Egg Harbor City, NJ (5/25-8/25)</h3>
-      <h4>POS Support Associate</h4>
-      <ul>
-        <li>Provided technical support for POS systems within Spencer’s and Spirit Halloween retail stores </li>
-        <li>Assisted in software and hardware troubleshooting for store operations during peak season </li>
-        <li>Communicated with regional tech teams to maintain system uptime</li>
-      </ul>
-    </section>
+          <div class="entry">
+            <div class="entry-header">
+              <div class="entry-left">
+                <span class="entry-org">Stevens Esports — Varsity Team Captain</span>
+                <span class="entry-role">Stevens Institute of Technology</span>
+              </div>
+              <div class="entry-right">
+                <span class="entry-location">Hoboken, NJ</span>
+                <span class="entry-date">Aug 2020 — May 2023</span>
+              </div>
+            </div>
+            <ul class="entry-list">
+              <li>Organized weekly team practices, coordinated competitive match schedules, and managed roster decisions</li>
+            </ul>
+          </div>
 
-    <footer>
-      <p>U.S. Citizen | Available to Work: November 2025</p>
+          <!-- PROJECTS_END -->
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>U.S. Citizen</span>
+      <span class="footer-dot">·</span>
+      <span>christopher-ward.com</span>
     </footer>
+
   </div>
+
 </body>
 </html>

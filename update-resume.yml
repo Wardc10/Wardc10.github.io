@@ -1,0 +1,37 @@
+name: Update Resume Content
+
+on:
+  schedule:
+    - cron: '0 10 * * 1'   # Every Monday at 10am UTC
+  workflow_dispatch:        # Manual trigger from GitHub Actions tab
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install python-docx requests
+
+      - name: Download resume and update index.html
+        run: python scripts/update_resume.py
+        env:
+          GDRIVE_FILE_ID: ${{ secrets.GDRIVE_FILE_ID }}
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet && echo "Nothing to commit." || (
+            git add index.html &&
+            git commit -m "chore: update resume content from Google Drive" &&
+            git push
+          )
