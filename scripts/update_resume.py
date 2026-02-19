@@ -44,6 +44,14 @@ SECTION_HEADINGS = {
     "projects":   ["projects", "projects & leadership", "projects and leadership"],
 }
 
+# Lines to ignore entirely — footer content, citizenship notes, availability, etc.
+IGNORED_LINES = [
+    "u.s. citizen",
+    "us citizen",
+    "available",
+    "available to work",
+]
+
 
 # ── Download ──────────────────────────────────────────────────────────────────
 
@@ -111,6 +119,10 @@ def extract_sections(docx_path: str) -> dict:
     for para in doc.paragraphs:
         text = get_paragraph_text(para)
         if not text:
+            continue
+
+        # Skip footer/noise lines
+        if any(text.lower().startswith(ignored) for ignored in IGNORED_LINES):
             continue
 
         # Check if this paragraph is a section heading
